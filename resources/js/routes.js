@@ -3,27 +3,31 @@ import VueRouter from 'vue-router';
 const routes = [
   {
   	path: '/',
-  	component: require('./pages/VueApplicationsComponent').default
+  	component: require('./pages/VueApplications').default
   },
   {
   	path: '/todo',
-  	component: require('./pages/ToDoComponent').default
+  	component: require('./pages/ToDo').default
   },
   {
   	path: '/github',
-  	component: require('./pages/VueGitHubComponent').default
+  	component: require('./pages/VueGitHub').default
   },
   {
     path: '/form',
-    component: require('./pages/FormComponent').default
+    component: require('./pages/Form').default
   },
   {
     path: '/input',
-    component: require('./pages/InputComponent').default
+    component: require('./pages/Input').default
   },
   {
     path: '/slots',
-    component: require('./pages/SlotsComponent').default
+    component: require('./pages/Slots').default
+  },
+  {
+    path: '/filters',
+    component: require('./pages/Filters').default
   }
 ];
 
